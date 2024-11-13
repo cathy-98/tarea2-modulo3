@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-xl navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="nav__logo" src="img/Divem---Isologo.png"/></a>
+                <a class="navbar-brand" href="#"><img class="nav__logo" src="img/Divem---Isologo.png" /></a>
                 <div class="collapse navbar-collapse show" id="navbarBasic">
                     <ul class="navbar-nav me-auto mb-2 mb-xl-0">
                         <li class="nav-item nav__item">
@@ -49,52 +49,14 @@
                 de cada paciente. Cada atención refleja nuestro enfoque humano y profesional, asegurando salud con
                 corazón.
             </p>
-
-            <!-- Card doctor 1 -->
-            <div class="team-section__card">
-                <img src="img/doctor1.webp" class="team-section__card-image">
-                <div class="team-section__card-body">
-                    <h3 class="team-section__card-title">Dr. Juan Pérez</h3>
-                    <p class="team-section__card-specialty">Especialista en Cardiología</p>
-                    <p class="team-section__card-description">El Dr. Juan Pérez cuenta con más de 20 años de
-                        experiencia en cardiología.</p>
-                </div>
-            </div>
-
-            <!-- Card doctor 2 -->
-            <div class="team-section__card">
-                <img src="img/doctora2.webp" alt="Foto de Dra. María López" class="team-section__card-image">
-                <div class="team-section__card-body">
-                    <h3 class="team-section__card-title">Dra. María López</h3>
-                    <p class="team-section__card-specialty">Especialista en Consultas Médicas</p>
-                    <p class="team-section__card-description">La Dra. María López es reconocida por su trabajo en
-                        consultas generales.</p>
-                </div>
-            </div>
-
-            <!-- Card doctor 3 -->
-            <div class="team-section__card">
-                <img src="img/doctor3.webp" alt="Foto de Dr. Carlos Martínez" class="team-section__card-image">
-                <div class="team-section__card-body">
-                    <h3 class="team-section__card-title">Dr. Carlos Martínez</h3>
-                    <p class="team-section__card-specialty">Especialista en Hospitalización</p>
-                    <p class="team-section__card-description">El Dr. Carlos Martínez se especializa en atención
-                        hospitalaria.</p>
-                </div>
-            </div>
-
-
-            <!-- Card doctor 4 -->
-            <div class="team-section__card">
-                <img src="img/doctora4.webp" alt="Foto de Dra. Elena García" class="team-section__card-image">
-                <div class="team-section__card-body">
-                    <h3 class="team-section__card-title">Dra. Elena García</h3>
-                    <p class="team-section__card-specialty">Especialista en Hospitalización.</p>
-                    <p class="team-section__card-description">Habitaciones confortables para tu recuperación.</p>
-                </div>
-            </div>
-
         </div>
+
+        <div class="row">
+            <button type="button" class="btn btn-primary" id="filtrar-genero">Fitrar por genero</button>
+        </div>
+        
+        <div class="row" id="listado-doctores"></div>
+
     </section>
 
     <!-- Pie de Página -->
@@ -112,7 +74,7 @@
         </div>
     </footer>
 
-
+    <script src="js/team.js"></script>
 </body>
 
 </html>

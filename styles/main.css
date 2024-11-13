@@ -8107,6 +8107,22 @@ button:hover, .btn:hover {
   background-color: #0056b3;
 }
 
+.hero {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.25), rgba(5, 7, 12, 0.25)), url("../../img/doctor-putting-glove-prevent-coronavirus-contamination.jpg");
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero__title {
+  position: absolute;
+  text-align: left;
+  top: 350px;
+  margin: 0px 50px;
+  color: #ffffff;
+}
+
 .footer {
   background-color: #343a40;
   color: #ffffff;
@@ -8136,10 +8152,229 @@ button:hover, .btn:hover {
   text-decoration: underline;
 }
 
-#bienvenida {
-  margin-top: 10px;
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 1rem;
 }
 
+.grid-column {
+  flex: 1 1 calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .grid-column {
+    flex: 1 1 100%;
+  }
+}
+
+.services-section__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.services-section__grid .services-section__card {
+  flex: 1 1 calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .services-section__grid .services-section__card {
+    flex: 1 1 100%;
+  }
+}
+
+.reviews-section__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.reviews-section__grid .reviews-section__card {
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+}
+@media (max-width: 768px) {
+  .reviews-section__grid .reviews-section__card {
+    flex: 1 1 100%;
+  }
+}
+
+.nav__reserve {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+.nav__reserve #nav__reserve--text {
+  color: #ffffff;
+}
+
+.nav__logo {
+  max-height: 4rem;
+  width: auto;
+}
+
+@media (min-width: 1200px) {
+  .nav__reserve {
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .nav__item {
+    padding: 0px 5px;
+  }
+}
+#formulario {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #c8c9ca;
+}
+#formulario__title {
+  color: #007bff;
+}
+
+.container_form {
+  width: 100%;
+  max-width: 900px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button, .btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+button:hover, .btn:hover {
+  color: #0056b3;
+}
+
+.mapa {
+  width: auto;
+  height: auto;
+}
+
+.welcome-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+.welcome-section__title {
+  text-align: center;
+  color: #007bff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.services-section {
+  padding: 2rem;
+  background-color: #c8c9ca;
+}
+.services-section__grid {
+  display: flex;
+}
+.services-section__title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.services-section__card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  display: flex;
+  max-width: 22rem;
+  width: auto;
+}
+.services-section__card-image {
+  border-radius: 10px;
+  display: block;
+  max-width: 230px;
+  max-height: 180px;
+  width: auto;
+  height: auto;
+}
+.services-section__card-title {
+  font-size: 1.5rem;
+  color: #495057;
+  margin-bottom: 0.5rem;
+}
+.services-section__card-description {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.services-section__card-body {
+  margin: 0px 5px;
+}
+
+.reviews-section {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+.reviews-section__grid {
+  display: flex;
+}
+.reviews-section__card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  max-width: 15rem;
+  max-height: 175px;
+  margin: 0px 5px;
+}
+
+@media (max-width: 1200px) {
+  .services-section__grid {
+    flex-direction: column;
+  }
+  .services-section__card {
+    margin: 4px 0px;
+  }
+  .reviews-section__grid {
+    flex-direction: column;
+  }
+  .reviews-section__card {
+    margin: 5px 0px;
+    width: 100%;
+    max-height: 125px;
+  }
+}
+@media (max-width: 468px) {
+  .services-section__grid {
+    flex-direction: column;
+  }
+  .services-section__card {
+    margin: 5px 0px;
+    width: 100%;
+  }
+  .services-section__card-image {
+    max-width: 180px;
+    max-height: 130px;
+    width: auto;
+    height: auto;
+  }
+  .services-section__card-body {
+    max-width: 50%;
+  }
+  .services-section__card-title {
+    font-size: 1.25rem;
+  }
+  .reviews-section__card {
+    max-height: 150px;
+  }
+}
 .team-section {
   padding: 2rem;
   background-color: #f8f9fa;
@@ -8157,7 +8392,6 @@ button:hover, .btn:hover {
   margin-bottom: 2rem;
 }
 .team-section__members {
-  display: flex;
   justify-content: space-between;
   gap: 1.5rem;
   flex-wrap: wrap;
@@ -8214,4 +8448,7 @@ button:hover, .btn:hover {
   .team-section__card-title, .team-section__card-specialty, .team-section__card-description {
     font-size: 0.85rem;
   }
+}
+div.section__card {
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */

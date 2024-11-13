@@ -9321,4 +9321,8 @@ button:hover, .btn:hover {
   }
 }
 
+div.section__card {
+  display: inline-block;
+}
+
 /*# sourceMappingURL=style.css.map */

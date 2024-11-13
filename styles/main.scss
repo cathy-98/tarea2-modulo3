@@ -15,3 +15,7 @@
 @use 'pages/contact';
 @use 'pages/home';
 @use 'pages/team';
+
+div.section__card {
+  display: inline-block;
+}
